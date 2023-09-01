@@ -9,7 +9,8 @@ const handleCategory=async()=>{
         //  console.log(category.category_id)
          const div=document.createElement('div')
          div.innerHTML=`
-          <button onclick="loadInfo('${category.category_id}')" class="btn"><a class="tab">${category.category}</a></button> 
+          <button onclick="loadInfo('${category.category_id}')" class="btn active-[bg-red] tab-active"><a class="tab 
+          ">${category.category}</a></button> 
          `;
          categoryContainer.appendChild(div)
     });
@@ -76,11 +77,9 @@ const res=await fetch(`https://openapi.programming-hero.com/api/videos/category/
  })
 }
 
-// const time=(sec)=>{
-//      const second=sec;
-//      const munites=sec/60;
-//      return munites 
-// }
+document.getElementById('blog-btn').addEventListener('click',function(){
+      window.location.href="blog.html"
+})
 
  
 handleCategory()

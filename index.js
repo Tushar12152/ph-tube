@@ -35,7 +35,7 @@ const res=await fetch(`https://openapi.programming-hero.com/api/videos/category/
   const newDiv=document.createElement('div')
   newDiv.innerHTML=`
    <div class=" mt-20  w-full md:ml-[300px]  lg:ml-[470px]">
-   <img class="ml-[80px] lg:ml-[70px] " src="icon.png">
+   <img class="ml-[80px] lg:ml-[70px] " src="./icon.png">
    <h1 class="text-center  mt-[6px] font-bold text-[25px]">Oops!! Sorry, There is no  content here</h1>
    </div>
   `;

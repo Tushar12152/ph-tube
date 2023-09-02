@@ -35,7 +35,7 @@ const res=await fetch(`https://openapi.programming-hero.com/api/videos/category/
   const newDiv=document.createElement('div')
   newDiv.innerHTML=`
    <div class=" mt-20  w-full md:ml-[300px]  lg:ml-[470px]">
-   <img class="ml-[80px] lg:ml-[70px] " src="./image/icon.png">
+   <img class="ml-[80px] lg:ml-[70px] " src="icon.png">
    <h1 class="text-center  mt-[6px] font-bold text-[25px]">Oops!! Sorry, There is no  content here</h1>
    </div>
   `;
@@ -57,7 +57,7 @@ const res=await fetch(`https://openapi.programming-hero.com/api/videos/category/
         </div>
          <div class="grid grid-cols-2 mt-2">
             <p class="">${card.authors[0].profile_name}</p>
-            <img class="w-10 mr-5" src="${card.authors[0].verified?'fvarify.jpg':''}">
+            <img class="w-10 mr-5" src="${card.authors[0].verified?'varify.jpg':''}">
             
          </div>
          <p>${card.others.views}</p>
@@ -115,7 +115,7 @@ const sort = async () => {
       </div>
        <div class="grid grid-cols-2 mt-2">
           <p class="">${card.authors[0].profile_name}</p>
-          <img class="w-10 mr-5" src="${card.authors[0].verified?'varify.jpg':''}">
+          <img class="w-10 mr-5" src="${card.authors[0].verified? 'varify.jpg':''}">
           
        </div>
        <p>${card.others.views}</p>
